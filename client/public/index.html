@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Alumni Circle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to right, #ffffff 60%, #b2d5d6 40%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .features {
+      position: absolute;
+      top: 30px;
+      left: 50px;
+    }
+    .features img {
+      width: 70px;
+      margin-bottom: 10px;
+    }
+    .features p {
+      margin: 15px 0;
+      font-weight: 600;
+    }
+    .flow {
+      position: absolute;
+      left: 100px;
+      top: 150px;
+    }
+    .flow img {
+      width: 100px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+    .login-container {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      width: 350px;
+      z-index: 10;
+    }
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    .google-btn {
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .separator {
+      text-align: center;
+      margin: 15px 0;
+      position: relative;
+    }
+    .separator::before, .separator::after {
+      content: "";
+      height: 1px;
+      background: #ccc;
+      position: absolute;
+      top: 50%;
+      width: 45%;
+    }
+    .separator::before {
+      left: 0;
+    }
+    .separator::after {
+      right: 0;
+    }
+    .separator span {
+      background: #fff;
+      padding: 0 10px;
+      color: #999;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .forgot {
+      text-align: right;
+      font-size: 0.9em;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    button.login {
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .terms {
+      font-size: 0.7em;
+      text-align: center;
+      margin-top: 15px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="features">
+    <img src="logo.png" alt="TAC Logo">
+    <p>Alumni Directory</p>
+    <p>Search & Filter</p>
+    <p>Profile Pages</p>
+    <p>Sorting & Tagging</p>
+  </div>
+
+  <div class="flow">
+    <img src="img1.png" alt="Step 1">
+    <img src="img2.png" alt="Step 2">
+    <img src="img3.png" alt="Step 3">
+  </div>
+
+  <div class="login-container">
+    <button class="google-btn">Sign in with Google</button>
+    <div class="separator"><span>OR</span></div>
+    <form>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <div class="forgot">Forgot Password?</div>
+      <button class="login">Log In</button>
+    </form>
+    <div class="terms">Terms of Service and Privacy Policy</div>
+  </div>
+</body>
+</html>
